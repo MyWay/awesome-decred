@@ -1,4 +1,6 @@
-# Awesome Decred <img src="https://github.com/MyWay/awesome-decred/blob/main/public/images/logo.webp?raw=true" width="100" alt="Logo"/>
+<img src="https://github.com/MyWay/awesome-decred/blob/main/public/images/logo.webp?raw=true" width="100" alt="Logo"/>
+
+# Awesome Decred
 
 A curated list of awesome Decred projects, resources, and more. Decred is a secure and adaptable digital currency for the future.
 
