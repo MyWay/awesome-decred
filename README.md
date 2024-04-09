@@ -2,6 +2,8 @@
 
 # Awesome Decred
 
+[![Deploy to GitHub Pages](https://github.com/MyWay/awesome-decred/actions/workflows/deploy.yml/badge.svg)](https://github.com/MyWay/awesome-decred/actions/workflows/deploy.yml)
+
 A curated list of awesome Decred projects, resources, and more. Decred is a secure and adaptable digital currency for the future.
 
 ## Contents
