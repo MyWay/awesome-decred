@@ -1,4 +1,4 @@
-# Awesome Decred ![Logo](https://github.com/MyWay/awesome-decred/blob/main/public/images/logo.webp?raw=true)
+# Awesome Decred <img src="https://github.com/MyWay/awesome-decred/blob/main/public/images/logo.webp?raw=true" width="100" alt="Logo"/>
 
 A curated list of awesome Decred projects, resources, and more. Decred is a secure and adaptable digital currency for the future.
 
@@ -40,9 +40,10 @@ A curated list of awesome Decred projects, resources, and more. Decred is a secu
 Your contributions are always welcome!
 
 If you'd like to add a new project or resource to the list, please submit a pull request or open an issue with your suggestion. Requirements:
- - A project logo (public/images/project-icon.png)
- - A resource.json valid item
- - A readme item
+
+-   A project logo (public/images/project-icon.png)
+-   A resource.json valid item
+-   A readme item
 
 ---
 
