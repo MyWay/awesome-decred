@@ -10,13 +10,13 @@ jobs:
         name: deploy-to-gh-pages
         runs-on: ubuntu-latest
         permissions:
-          contents: write
-          pages: write
-          id-token: write
+            contents: write
+            pages: write
+            id-token: write
 
         concurrency:
-          group: "pages"
-          cancel-in-progress: false
+            group: 'pages'
+            cancel-in-progress: false
 
         steps:
             - uses: actions/checkout@v4
@@ -30,6 +30,7 @@ jobs:
 
             - name: Deploy to GitHub Pages
               uses: peaceiris/actions-gh-pages@v4
+              if: github.ref == 'refs/heads/main'
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
                   publish_dir: ./output/public
