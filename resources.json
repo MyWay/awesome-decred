@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Decrediton",
+    "description": "The official Graphical UI wallet with all Decred features.",
+    "icon": "/images/decred-wallet-icon.png",
+    "category": "Wallet",
+    "link": "https://github.com/decred/decred-binaries/releases/"
+  },
+  {
+    "id": 2,
+    "title": "Politeia",
+    "description": "Decred's proposal system for community-driven governance.",
+    "icon": "/images/politeia-icon.png",
+    "category": "Governance",
+    "link": "https://proposals.decred.org"
+  },
+  {
+    "id": 3,
+    "title": "dcrdex",
+    "description": "A decentralized exchange built on the Decred network.",
+    "icon": "/images/dcrdex-icon.png",
+    "category": "Exchange",
+    "link": "https://dex.decred.org"
+  },
+  {
+    "id": 4,
+    "title": "Cryptopower",
+    "description": "Multi-coin light GUI wallet for DCR, BTC and LTC.",
+    "icon": "/images/cryptopower-icon.png",
+    "category": "Wallet",
+    "link": "https://github.com/crypto-power/cryptopower/releases/"
+  }
+]
