@@ -27,6 +27,7 @@
             >
                 <div class="flex items-center mb-4">
                     <img
+                        class="w-8 h-8 mr-2"
                         :src="`${
                             GH_PAGES_PREFIX
                                 ? `${GH_PAGES_PREFIX}${project.icon}`
