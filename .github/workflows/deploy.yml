@@ -31,8 +31,6 @@ jobs:
                   NITRO_PRESET: github_pages
                   NUXT_APP_BASE_URL: ${{ secrets.NUXT_APP_BASE_URL }}
                   PUBLIC_REPO: ${{ secrets.PUBLIC_REPO }}
-            - name: List generated files
-              run: ls -la .output/public
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               with:
