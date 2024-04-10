@@ -7,7 +7,7 @@ on:
 
 jobs:
     build:
-        name: deploy-to-gh-pages
+        name: build
         runs-on: ubuntu-latest
         permissions:
             contents: write
