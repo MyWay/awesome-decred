@@ -6,7 +6,7 @@ on:
     workflow_dispatch:
 
 jobs:
-    deploy:
+    build:
         name: deploy-to-gh-pages
         runs-on: ubuntu-latest
         permissions:
@@ -26,14 +26,27 @@ jobs:
               run: bun install
 
             - name: Generate static files
-              run: bun run generate
+              run: bun run build
               env:
+                  NITRO_PRESET: github_pages
                   NUXT_APP_BASE_URL: ${{ secrets.NUXT_APP_BASE_URL }}
                   PUBLIC_REPO: ${{ secrets.PUBLIC_REPO }}
-
-            - name: Deploy to GitHub Pages
-              uses: peaceiris/actions-gh-pages@v4
-              if: github.ref == 'refs/heads/main'
+            - name: Upload artifact
+              uses: actions/upload-pages-artifact@v3
               with:
-                  github_token: ${{ secrets.GITHUB_TOKEN }}
-                  publish_dir: ./.output/public
+                  path: ./.output/public
+
+    deploy:
+        needs: build
+        permissions:
+            pages: write
+            id-token: write
+        environment:
+            name: github_pages
+            url: ${{ steps.deployment.outputs.page_url }}
+        runs-on: ubuntu-latest
+        steps:
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v1
+              if: github.ref == 'refs/heads/main'
