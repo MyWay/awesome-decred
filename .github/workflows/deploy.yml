@@ -31,6 +31,7 @@ jobs:
                   NITRO_PRESET: github_pages
                   NUXT_APP_BASE_URL: ${{ secrets.NUXT_APP_BASE_URL }}
                   PUBLIC_REPO: ${{ secrets.PUBLIC_REPO }}
+                  PUBLIC_GH_PAGES_PREFIX: ${{ secrets.PUBLIC_GH_PAGES_PREFIX }}
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               with:
