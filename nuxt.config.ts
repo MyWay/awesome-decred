@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             REPO: process.env.PUBLIC_REPO,
+            GH_PAGES_PREFIX: process.env.PUBLIC_GH_PAGES_PREFIX,
         },
     },
 });
