@@ -26,7 +26,14 @@
                 class="bg-white shadow-md rounded-lg p-6"
             >
                 <div class="flex items-center mb-4">
-                    <img :src="project.icon" class="w-12 h-12 mr-4" />
+                    <img
+                        :src="`${
+                            GH_PAGES_PREFIX
+                                ? '${GH_PAGES_PREFIX}${project.icon}'
+                                : project.icon
+                        }`"
+                        class="w-12 h-12 mr-4"
+                    />
                     <h2 class="text-2xl font-semibold">{{ project.title }}</h2>
                 </div>
                 <p class="text-gray-600">{{ project.description }}</p>
@@ -54,6 +61,7 @@
 
     const config = useRuntimeConfig();
     const REPO = config.public.REPO;
+    const GH_PAGES_PREFIX = config.public.GH_PAGES_PREFIX;
 
     const projects = ref([]);
     const searchQuery = ref('');
