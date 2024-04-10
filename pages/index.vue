@@ -26,7 +26,7 @@
                 class="bg-white shadow-md rounded-lg p-6"
             >
                 <div class="flex items-center mb-4">
-                    <NuxtImg :src="project.icon" class="w-12 h-12 mr-4" />
+                    <img :src="project.icon" class="w-12 h-12 mr-4" />
                     <h2 class="text-2xl font-semibold">{{ project.title }}</h2>
                 </div>
                 <p class="text-gray-600">{{ project.description }}</p>
