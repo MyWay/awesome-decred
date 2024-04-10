@@ -31,10 +31,12 @@ jobs:
                   NITRO_PRESET: github_pages
                   NUXT_APP_BASE_URL: ${{ secrets.NUXT_APP_BASE_URL }}
                   PUBLIC_REPO: ${{ secrets.PUBLIC_REPO }}
+            - name: List generated files
+              run: ls -la .output/public
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               with:
-                  path: ./.output/public
+                path: ./.output/public
 
     deploy:
         needs: build
@@ -48,5 +50,5 @@ jobs:
         steps:
             - name: Deploy to GitHub Pages
               id: deployment
-              uses: actions/deploy-pages@v1
+              uses: actions/deploy-pages@v4
               if: github.ref == 'refs/heads/main'
