@@ -11,6 +11,7 @@ A curated list of awesome Decred projects, resources, and more. Decred is a secu
 -   [Wallets](#wallets)
 -   [Governance](#governance)
 -   [Exchanges](#exchanges)
+-   [Tools](#tools)
 -   [Educational Resources](#educational-resources)
 -   [Community](#community)
 -   [Contributing](#contributing)
@@ -27,6 +28,10 @@ A curated list of awesome Decred projects, resources, and more. Decred is a secu
 ## Exchanges
 
 -   [dcrdex](https://dex.decred.org) - A decentralized exchange built on the Decred network.
+
+## Tools
+
+-   [Timestamply](https://timestamp.decred.org/) - A tool for timestamping files using the Decred blockchain, ensuring data integrity and proof of existence.
 
 ## Educational Resources
 
